@@ -9,12 +9,20 @@ nav {
     padding: 25px;
     font-family: raleway;
     color: white;
-    box-shadow: 5px 5px 10px grey;
+    /* box-shadow: 5px 5px 10px grey; */
 }
 
-a {
+nav > a {
     text-decoration: none;
     padding: 0 15px;
+}
+
+nav > a:visited {
+    color: rgb(255, 255, 255);
+}
+
+nav > a:hover {
+    color: rgb(172, 104, 2);
 }
 
 #p1 {
@@ -23,7 +31,8 @@ a {
     /* background-image: url('./images/luca-bravo-198061-unsplash.jpg'); */
     background-size: cover;
     overflow: hidden;
-    background: rgba(226, 226, 226, 1);
+    background-image: url('./images/zac-ong-394558-unsplash.jpg');
+    /* background: rgba(226, 226, 226, 1);
     background: -moz-linear-gradient(
         top,
         rgba(226, 226, 226, 1) 0%,
@@ -67,7 +76,7 @@ a {
         rgba(209, 209, 209, 1) 51%,
         rgba(254, 254, 254, 1) 100%
     );
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 ); */
 }
 
 .welcome {
@@ -78,37 +87,47 @@ a {
 p {
     font-family: 'raleway', sans-serif;
     font-size: 1em;
-    color: rgb(102, 83, 19);
+    color: rgb(255, 153, 0);
 }
 
 #p2 {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     margin: 0 75px;
     padding: 50px 0;
     height: 100vh;
 }
 
-h2 {
+#p2 > h2 {
+    display: flex;
+    flex: 0 0 100%;
     text-align: center;
-    padding-top: 100px;
+    justify-content: center;
+    padding-top: 50px;
+    margin: 0 100px;
+    font-family: raleway, sans-serif;
 }
 
 article {
     padding: 15px 50px;
-    text-align: justify;
+    text-align: center;
     text-justify: inter-word;
     font-family: raleway, sans-serif;
-    color: rgb(102, 83, 19);
+    color: rgb(13, 27, 53);
+    width: 300px;
+    height: 900px;
+    line-height: 1.5;
+    border-style: rounded 2px solid;
 }
 header {
     text-align: center;
     font-size: 1.5em;
     font-weight: bolder;
+    color: rgb(13, 27, 53);
+    font-family: raleway, sans-serif;
 }
 h2 {
-    font-family: Anton, sans-serif;
-    color: rgb(255, 255, 255);
+    color: rgb(13, 27, 53);
     font-size: 5em;
     text-shadow: 2px 5px 8px #444e5e;
     padding: 0 0 25px 0;
@@ -116,7 +135,9 @@ h2 {
 img {
     padding: 25px;
 }
-
+a {
+    text-decoration: none;
+}
 #lname {
     font-family: 'Anton', sans-serif;
     font-size: 10em;
@@ -124,13 +145,34 @@ img {
     text-shadow: 2px 5px 8px #444e5e;
 }
 
+article > p {
+    font-family: 'raleway', sans-serif;
+    font-size: 1em;
+    color: rgb(49, 49, 49);
+}
+
+article > footer > p {
+    font-family: 'raleway', sans-serif;
+    font-size: 1em;
+    color: rgb(49, 49, 49);
+}
+
 #p3 {
-    content: '\e610';
-    color: white;
+    position: static;
+    left: 0;
+    bottom: 100;
+    width: 100%;
     text-align: center;
-    display: block;
+    color: white;
     max-width: 100vw;
     height: 100px;
-    background-color: grey;
+    background-color: rgb(13, 27, 53);
     padding-top: 45px;
+}
+
+#p3 > a {
+    padding: 0 25px 15px 25px;
+}
+#p3 > a:visited {
+    color: rgb(255, 255, 255);
 }
