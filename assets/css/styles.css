@@ -1,178 +1,134 @@
 html {
-    margin: 0 auto;
     scroll-behavior: smooth;
+}
+body {
+    max-width: 100vw;
+    margin: 0 auto;
 }
 
 nav {
-    text-align: center;
-    position: sticky;
     padding: 25px;
     font-family: raleway;
-    color: white;
-    /* box-shadow: 5px 5px 10px grey; */
+    color: rgb(80, 80, 80);
+}
+nav > h4 {
+    display: inline;
+    col
 }
 
 nav > a {
     text-decoration: none;
     padding: 0 15px;
+    color: rgb(80, 80, 80);
+    float: right;
 }
 
 nav > a:visited {
-    color: rgb(255, 255, 255);
+    color: rgb(80, 80, 80);
 }
 
 nav > a:hover {
-    color: rgb(172, 104, 2);
-}
-
-#p1 {
-    max-width: 100vw;
-    height: 100vh;
-    /* background-image: url('./images/luca-bravo-198061-unsplash.jpg'); */
-    background-size: cover;
-    overflow: hidden;
-    background-image: url('./images/zac-ong-394558-unsplash.jpg');
-    /* background: rgba(226, 226, 226, 1);
-    background: -moz-linear-gradient(
-        top,
-        rgba(226, 226, 226, 1) 0%,
-        rgba(219, 219, 219, 1) 50%,
-        rgba(209, 209, 209, 1) 51%,
-        rgba(254, 254, 254, 1) 100%
-    );
-    background: -webkit-gradient(
-        left top,
-        left bottom,
-        color-stop(0%, rgba(226, 226, 226, 1)),
-        color-stop(50%, rgba(219, 219, 219, 1)),
-        color-stop(51%, rgba(209, 209, 209, 1)),
-        color-stop(100%, rgba(254, 254, 254, 1))
-    );
-    background: -webkit-linear-gradient(
-        top,
-        rgba(226, 226, 226, 1) 0%,
-        rgba(219, 219, 219, 1) 50%,
-        rgba(209, 209, 209, 1) 51%,
-        rgba(254, 254, 254, 1) 100%
-    );
-    background: -o-linear-gradient(
-        top,
-        rgba(226, 226, 226, 1) 0%,
-        rgba(219, 219, 219, 1) 50%,
-        rgba(209, 209, 209, 1) 51%,
-        rgba(254, 254, 254, 1) 100%
-    );
-    background: -ms-linear-gradient(
-        top,
-        rgba(226, 226, 226, 1) 0%,
-        rgba(219, 219, 219, 1) 50%,
-        rgba(209, 209, 209, 1) 51%,
-        rgba(254, 254, 254, 1) 100%
-    );
-    background: linear-gradient(
-        to bottom,
-        rgba(226, 226, 226, 1) 0%,
-        rgba(219, 219, 219, 1) 50%,
-        rgba(209, 209, 209, 1) 51%,
-        rgba(254, 254, 254, 1) 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 ); */
-}
-
-.welcome {
-    margin: 175px 0px 0px 275px;
-    text-align: left;
-}
-
-p {
-    font-family: 'raleway', sans-serif;
-    font-size: 1em;
     color: rgb(255, 153, 0);
 }
 
-#p2 {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 75px;
-    padding: 50px 0;
-    height: 100vh;
+.about {
+    text-align: center;
+    align-content: center;
+    padding: 4em;
+    color: rgb(253, 217, 138);
+    /* background: rgb(44, 44, 44); */
+    font-size: 3vw;
+    font-family: 'raleway','Courier New', Courier, monospace;
+    background-color: rgb(59, 59, 59);
+    transition: .9s;
 }
 
-#p2 > h2 {
-    display: flex;
-    flex: 0 0 100%;
-    text-align: center;
-    justify-content: center;
-    padding-top: 50px;
-    margin: 0 100px;
-    font-family: raleway, sans-serif;
+
+#p1 > p {
+    font-family: 'raleway', sans-serif;
+    
 }
 
-article {
-    padding: 15px 50px;
-    text-align: center;
-    text-justify: inter-word;
+/* Project Section */
+/* Project Section */
+/* Project Section */
+
+.projects {
+    height: 75vh;
+    /* width: 50%; */
+    margin: 0 auto;
+    color: rgb(59, 59, 59);
+    align-content: justify;
     font-family: raleway, sans-serif;
-    color: rgb(13, 27, 53);
+    
+} 
+
+.project {
+    height: 200px;
     width: 300px;
-    height: 900px;
-    line-height: 1.5;
-    border-style: rounded 2px solid;
-}
-header {
+    border: 1.5px solid rgb(128, 128, 128);;
+    border-radius: 12px;
+    float: left;
+    margin: 20px;
     text-align: center;
-    font-size: 1.5em;
-    font-weight: bolder;
-    color: rgb(13, 27, 53);
-    font-family: raleway, sans-serif;
+    padding: 10px;
+    transition: .9s;
 }
+
+.project:hover {
+
+    background-color: rgb(253, 213, 138);
+}
+
 h2 {
-    color: rgb(13, 27, 53);
-    font-size: 5em;
-    text-shadow: 2px 5px 8px #444e5e;
-    padding: 0 0 25px 0;
-}
-img {
-    padding: 25px;
-}
-a {
-    text-decoration: none;
-}
-#lname {
-    font-family: 'Anton', sans-serif;
-    font-size: 10em;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 5px 8px #444e5e;
-}
-
-article > p {
-    font-family: 'raleway', sans-serif;
-    font-size: 1em;
-    color: rgb(49, 49, 49);
-}
-
-article > footer > p {
-    font-family: 'raleway', sans-serif;
-    font-size: 1em;
-    color: rgb(49, 49, 49);
-}
-
-#p3 {
-    position: static;
-    left: 0;
-    bottom: 100;
-    width: 100%;
     text-align: center;
-    color: white;
-    max-width: 100vw;
-    height: 100px;
-    background-color: rgb(13, 27, 53);
-    padding-top: 45px;
+    font-family: raleway, sans-serif;
+    margin: 1.5em 0;
+    font-size: 3.5vw;
+    text-align: center;
+    color: rgb(63, 63, 63);
+    /* text-shadow: 2px 5px 8px #444e5e; */
 }
 
-#p3 > a {
-    padding: 0 25px 15px 25px;
+.projects > #project {
+    padding: 20px;
 }
-#p3 > a:visited {
+
+#project > header {
+    font-weight: bold;
+}
+
+#project > a:visited {
     color: rgb(255, 255, 255);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ 
+  }
+
+  #project1 {
+    border-style: dotted solid;
+    height: 200px;
+    width: 400px;
+  }
+
+  .footer{
+      width: auto;
+      height: 50px;
+      text-align: center;
+      padding: 50px;
+      font-family: raleway, sans-serif;
+      color: rgb(63, 63, 63);
+    }
+
+    .footer > a {
+        color: rgb(63, 63, 63);
+        padding: 25px;
+    }
+
+.footer > a:visited {
+    color: rgb(63, 63, 63);
 }
