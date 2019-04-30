@@ -54,26 +54,47 @@ nav > a:hover {
 /* Project Section */
 
 .projects {
+    text-align: center;
     height: 75vh;
-    /* width: 50%; */
-    margin: 0 auto;
+    width: 100%; 
+    /* margin: 0 auto; */
     color: rgb(59, 59, 59);
-    align-content: justify;
-    font-family: raleway, sans-serif;
-    
+    /* align-content: justify; */
+    line-height: 1.25;
 } 
+.project > header {
+    font-family: Bellefair;
+    background-color: rgb(59, 59, 59);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(59, 59, 59);
+    border-radius: 8px;
+    padding: 5px 0;
+}
+.project > div > a {
+    position: absolute;
+    bottom: 0px;
+
+}
+
+.project > a:visited {
+    color: rgb(63, 63, 63);
+}
 
 .project {
     height: 200px;
     width: 300px;
+    display:inline-block; 
     border: 1.5px solid rgb(128, 128, 128);;
     border-radius: 12px;
-    float: left;
+    /* float: left; */
     margin: 20px;
     text-align: center;
     padding: 10px;
     transition: .9s;
+    font-family: raleway, sans-serif;
+    
 }
+
 
 .project:hover {
 
