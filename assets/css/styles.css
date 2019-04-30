@@ -35,19 +35,23 @@ nav > a:hover {
     text-align: center;
     align-content: center;
     padding: 4em;
-    color: rgb(253, 217, 138);
+    color: rgb(255, 255, 255);
     /* background: rgb(44, 44, 44); */
-    font-size: 3vw;
-    font-family: 'raleway','Courier New', Courier, monospace;
+    /* font-size: 3vw; */
+    font-family: raleway,'Courier New', Courier, monospace;
     background-color: rgb(59, 59, 59);
     transition: .9s;
+    line-height: 1.25;
+}
+
+.about > h1 {
+    font-size: 3vw;
+    color: rgb(253, 217, 138);
+    padding: 10px 0;
 }
 
 
-#p1 > p {
-    font-family: 'raleway', sans-serif;
-    
-}
+
 
 /* Project Section */
 /* Project Section */
